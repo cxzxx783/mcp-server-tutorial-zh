@@ -60,7 +60,7 @@ def read_text_file(file_path: str) -> str:
 
 @mcp.tool()
 def list_files(directory: str, pattern: str = "") -> str:
-    """列出目录下的文本文件。directory=目录路径; pattern=可选筛选关键词(如 \"log\" 只显示含 log 的文件)"""
+    """列出目录下的文本文件。directory=目录路径; pattern=可选筛选关键词(如 "log" 只显示含 log 的文件)"""
     directory = directory.replace("\\", "/")
 
     if not os.path.isdir(directory):
