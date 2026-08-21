@@ -11,7 +11,7 @@ MCP Server 有三大能力：**Tool、Resource、Prompt**。新手先掌握 Tool
 ```python
 @mcp.tool()
 def search_news(keyword: str, top_k: int = 5) -> str:
-    \"\"\"搜索最新新闻，keyword=关键词，top_k=返回条数\"\"\"
+    """搜索最新新闻，keyword=关键词，top_k=返回条数"""
     # 函数体：查数据库/调API/读文件……
     return result
 ```
@@ -31,10 +31,10 @@ def search_news(keyword: str, top_k: int = 5) -> str:
 **Resource 让 AI 能读取数据**（文件、配置、日志等），类似 REST 里的 GET 请求。
 
 ```python
-@mcp.resource(\"config://app/settings\")
+@mcp.resource("config://app/settings")
 def get_settings() -> str:
-    \"\"\"读取应用配置\"\"\"
-    with open(\"config.json\", encoding=\"utf-8\") as f:
+    """读取应用配置"""
+    with open("config.json", encoding="utf-8") as f:
         return f.read()
 ```
 
@@ -49,7 +49,7 @@ Resource 用 URI 寻址（`file://`、`db://`、`config://` 等），适合让 A
 ```python
 @mcp.prompt()
 def review_code() -> str:
-    return \"请审查以下代码：格式规范、性能问题、安全隐患，逐条列出。\"
+    return "请审查以下代码：格式规范、性能问题、安全隐患，逐条列出。"
 ```
 
 适合：代码审查、文档翻译、日志分析等固定场景。
