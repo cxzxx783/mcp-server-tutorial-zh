@@ -15,8 +15,10 @@ if sys.platform == "win32":
 # ---------- 配置 ----------
 # ⚠️ 你需要去百度千帆平台申请自己的 API key
 # 申请地址：https://console.bce.baidu.com/qianfan/ais/console/onlineService
+# 方式1：设置环境变量 BAIDU_API_KEY
+# 方式2：直接修改下面的 API_KEY
 API_URL = "https://qianfan.baidubce.com/v2/ai_search/web_search"
-API_KEY = "你的百度千帆 API Key"   # ← 改成你自己的
+API_KEY = __import__("os").environ.get("BAIDU_API_KEY", "你的百度千帆 API Key")
 
 # 时间过滤参数映射
 _RECENCY_MAP = {

@@ -1,6 +1,13 @@
-# MCP Server 中文教程
+<p align="center">
+  <img src="assets/banner-light.svg" alt="MCP Server 中文教程" width="100%">
+</p>
 
-> 🚀 从零开始，用 Python 构建你自己的 MCP Server
+<h1 align="center">MCP Server 中文教程</h1>
+<h3 align="center">从零开始，用 Python 构建你自己的 MCP Server</h3>
+
+<p align="center">
+  <em>MCP Server Tutorial in Chinese — Build your own MCP Server from scratch with Python.</em>
+</p>
 
 <div align="center">
 
@@ -8,6 +15,7 @@
 ![Python](https://img.shields.io/badge/Python-3.10+-green)
 ![MCP](https://img.shields.io/badge/MCP-最新-orange)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
+![Stars](https://img.shields.io/github/stars/cxzxx783/mcp-server-tutorial-zh)
 
 **让 AI 能调用你的工具、读取你的数据——用 MCP 协议。**
 
